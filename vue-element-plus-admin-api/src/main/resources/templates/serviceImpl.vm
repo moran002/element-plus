@@ -1,0 +1,14 @@
+package com.moran.service.impl;
+
+import com.moran.service.${table.className}Service;
+import org.springframework.stereotype.Service;
+
+/**
+* ${table.classComment} Service 实现类
+*
+* @author ${table.author}
+*/
+@Service
+public class ${table.className}ServiceImpl implements ${table.className}Service {
+
+}

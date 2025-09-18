@@ -1,0 +1,12 @@
+package ${package.Service};
+
+import org.springframework.stereotype.Service;
+/**
+ * $!{table.comment} Service接口
+ *
+ * @author ${author}
+ * @since ${date}
+ */
+@Service
+public class ${table.serviceName} {
+}

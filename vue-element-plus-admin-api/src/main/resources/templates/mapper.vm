@@ -1,0 +1,21 @@
+package ${package.Mapper};
+
+#foreach($pkg in ${importMapperFrameworkPackages})
+import ${pkg};
+#end
+#if($importMapperJavaPackages.size()>0)
+
+    #foreach($pkg in ${importMapperJavaPackages})
+    import ${pkg};
+    #end
+#end
+
+/**
+ * $!{table.comment} Mapper 接口
+ *
+ * @author ${author}
+ * @since ${date}
+ */
+@Mapper
+public interface  ${table.mapperName} extends ${superMapperClass}<${entity}> {
+}
