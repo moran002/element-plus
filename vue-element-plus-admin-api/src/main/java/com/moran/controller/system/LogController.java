@@ -1,5 +1,6 @@
 package com.moran.controller.system;
 
+import cn.dev33.satoken.annotation.SaCheckPermission;
 import cn.hutool.v7.core.bean.BeanUtil;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.moran.conf.bean.PageResponseBean;
@@ -25,7 +26,7 @@ public class LogController {
      * 日志列表
      */
     @GetMapping("/list")
-    // @SaCheckPermission("system:log:query")
+    @SaCheckPermission("system:log:query")
     public PageResponseBean<LogRespVO> list(Integer type, String nickName) {
         Page<SysLoginLog> page = sysLoginLogService.page(type, nickName);
         if (page.getTotal() >0) {
