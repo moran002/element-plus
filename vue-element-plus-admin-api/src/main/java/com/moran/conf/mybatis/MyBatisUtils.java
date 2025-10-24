@@ -1,7 +1,7 @@
 package com.moran.conf.mybatis;
 
-import cn.hutool.core.collection.CollectionUtil;
-import cn.hutool.core.util.StrUtil;
+import cn.hutool.v7.core.collection.CollUtil;
+import cn.hutool.v7.core.text.StrUtil;
 import com.baomidou.mybatisplus.core.metadata.OrderItem;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
 import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
@@ -40,7 +40,7 @@ public class MyBatisUtils {
         // 页码 + 数量
         Page<T> page = new Page<>(pageNo, pageSize);
         // 排序字段
-        if (!CollectionUtil.isEmpty(sortingFields)) {
+        if (!CollUtil.isEmpty(sortingFields)) {
             page.addOrder(sortingFields.stream().map(sortingField -> SortingField.ORDER_ASC.equals(sortingField.getOrder())
                             ? OrderItem.asc(StrUtil.toUnderlineCase(sortingField.getField()))
                             : OrderItem.desc(StrUtil.toUnderlineCase(sortingField.getField())))

@@ -1,7 +1,6 @@
 package com.moran.utils;
 
 import cn.dev33.satoken.stp.StpUtil;
-import cn.hutool.extra.servlet.JakartaServletUtil;
 import com.moran.conf.bean.UserInfo;
 import com.moran.conf.constant.CommonConstant;
 import com.moran.conf.exception.ServiceException;
@@ -10,7 +9,6 @@ import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
-import javax.security.auth.login.LoginException;
 
 /**
  * @author : moran
@@ -51,10 +49,10 @@ public class ServletUtil {
         if (request == null) {
             return null;
         }
-        return JakartaServletUtil.getClientIP(request);
+        return cn.hutool.v7.http.server.servlet.ServletUtil.getClientIP(request);
     }
     public static String getClientIP(HttpServletRequest request) {
-        return JakartaServletUtil.getClientIP(request);
+        return cn.hutool.v7.http.server.servlet.ServletUtil.getClientIP(request);
     }
 
     /**

@@ -1,6 +1,6 @@
 package com.moran.conf.bean;
 
-import cn.hutool.core.util.StrUtil;
+import cn.hutool.v7.core.text.StrUtil;
 import com.moran.model.SysMenu;
 import com.moran.model.SysRole;
 import com.moran.model.SysUser;

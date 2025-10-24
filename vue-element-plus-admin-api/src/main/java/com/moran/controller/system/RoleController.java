@@ -2,7 +2,7 @@ package com.moran.controller.system;
 
 import cn.dev33.satoken.annotation.SaCheckPermission;
 import cn.dev33.satoken.annotation.SaIgnore;
-import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.v7.core.bean.BeanUtil;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.moran.conf.bean.PageResponseBean;
 import com.moran.conf.bean.ResponseBean;

@@ -1,7 +1,7 @@
 package com.moran.conf.log;
 
 import cn.dev33.satoken.stp.StpUtil;
-import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.v7.core.bean.BeanUtil;
 import com.moran.model.SysOperateLog;
 import com.moran.service.SysOperateLogService;
 import com.moran.utils.ServletUtil;

@@ -1,7 +1,7 @@
 package com.moran.conf.exception;
 
 import cn.dev33.satoken.exception.SaTokenException;
-import cn.hutool.crypto.CryptoException;
+import cn.hutool.v7.crypto.CryptoException;
 import com.moran.conf.bean.ResponseBean;
 import com.moran.conf.constant.CodeConstant;
 import lombok.extern.slf4j.Slf4j;

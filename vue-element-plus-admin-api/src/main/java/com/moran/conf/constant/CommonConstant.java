@@ -1,6 +1,6 @@
 package com.moran.conf.constant;
 
-import cn.hutool.crypto.asymmetric.RSA;
+import cn.hutool.v7.crypto.asymmetric.RSA;
 
 /**
  * @author moran

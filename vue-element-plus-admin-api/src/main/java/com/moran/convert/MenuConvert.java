@@ -1,8 +1,8 @@
 package com.moran.convert;
 
-import cn.hutool.core.bean.BeanUtil;
-import cn.hutool.core.collection.CollUtil;
-import cn.hutool.core.util.StrUtil;
+import cn.hutool.v7.core.bean.BeanUtil;
+import cn.hutool.v7.core.collection.CollUtil;
+import cn.hutool.v7.core.text.StrUtil;
 import com.moran.controller.auth.vo.RouterRespVO;
 import com.moran.controller.system.menu.MenuReqVO;
 import com.moran.controller.system.menu.MenuRespVO;

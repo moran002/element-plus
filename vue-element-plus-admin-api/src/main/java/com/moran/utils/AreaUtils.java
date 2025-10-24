@@ -1,14 +1,14 @@
 package com.moran.utils;
 
-import cn.hutool.core.io.resource.ResourceUtil;
-import cn.hutool.core.lang.Assert;
-import cn.hutool.core.text.csv.CsvRow;
-import cn.hutool.core.text.csv.CsvUtil;
+import cn.hutool.v7.core.lang.Assert;
+import cn.hutool.v7.poi.csv.CsvRow;
+import cn.hutool.v7.poi.csv.CsvUtil;
 import com.moran.utils.vo.Area;
 import com.moran.utils.vo.AreaTypeEnum;
 import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;
 
+import java.io.File;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -41,7 +41,7 @@ public class AreaUtils {
         areas.put(Area.ID_GLOBAL, new Area(Area.ID_GLOBAL, "全球", 0,
                 null, new ArrayList<>()));
         // 从 csv 中加载数据
-        List<CsvRow> rows = CsvUtil.getReader().read(ResourceUtil.getUtf8Reader("area.csv")).getRows();
+        List<CsvRow> rows = CsvUtil.getReader().read(new File("area.csv")).getRows();
         rows.remove(0); // 删除 header
         for (CsvRow row : rows) {
             // 创建 Area 对象

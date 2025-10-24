@@ -3,7 +3,7 @@ package com.moran.controller.auth;
 import cn.dev33.satoken.annotation.SaCheckLogin;
 import cn.dev33.satoken.annotation.SaIgnore;
 import cn.dev33.satoken.stp.StpUtil;
-import cn.hutool.core.collection.CollUtil;
+import cn.hutool.v7.core.collection.CollUtil;
 import com.moran.conf.bean.ResponseBean;
 import com.moran.conf.bean.UserInfo;
 import com.moran.conf.constant.CommonConstant;

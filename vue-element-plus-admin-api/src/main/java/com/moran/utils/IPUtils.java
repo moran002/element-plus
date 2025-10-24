@@ -1,6 +1,6 @@
 package com.moran.utils;
 
-import cn.hutool.core.io.resource.ResourceUtil;
+import cn.hutool.v7.core.io.resource.ResourceUtil;
 import com.moran.utils.vo.Area;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;

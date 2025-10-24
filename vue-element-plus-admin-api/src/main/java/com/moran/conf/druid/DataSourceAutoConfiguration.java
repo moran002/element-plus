@@ -1,6 +1,6 @@
 package com.moran.conf.druid;
 
-import cn.hutool.json.JSONUtil;
+import cn.hutool.v7.json.JSONUtil;
 import com.alibaba.druid.spring.boot3.autoconfigure.properties.DruidStatProperties;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.AutoConfiguration;

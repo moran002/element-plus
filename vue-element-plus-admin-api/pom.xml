@@ -28,6 +28,7 @@
         <sa-token.version>1.42.0</sa-token.version>
         <data.version>3.5.3</data.version>
         <hutool.version>5.8.40</hutool.version>
+        <hutool.v7.version>7.0.0-M2</hutool.v7.version>
         <mybatis-plus.version>3.5.14</mybatis-plus.version>
         <log.version>3.0.6</log.version>
         <mapstruct.version>1.6.3</mapstruct.version>
@@ -66,10 +67,15 @@
             <version>${mapstruct.version}</version>
         </dependency>
         <!-- 工具类 -->
+        <!-- <dependency> -->
+        <!--     <groupId>cn.hutool</groupId> -->
+        <!--     <artifactId>hutool-all</artifactId> -->
+        <!--     <version>${hutool.version}</version> -->
+        <!-- </dependency> -->
         <dependency>
-            <groupId>cn.hutool</groupId>
+            <groupId>cn.hutool.v7</groupId>
             <artifactId>hutool-all</artifactId>
-            <version>${hutool.version}</version>
+            <version>${hutool.v7.version}</version>
         </dependency>
         <!--Sa-Token-->
         <!-- Sa-Token 权限认证, 在线文档：https://sa-token.cc/ -->
