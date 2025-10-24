@@ -36,7 +36,7 @@ const { tableRegister, tableState, tableMethods } = useTable({
   }
 })
 const { total, loading, dataList, pageSize, currentPage } = tableState
-const { getList, getElTableExpose, delList } = tableMethods
+const { getList } = tableMethods
 
 const crudSchemas = reactive<CrudSchema[]>([
   {
