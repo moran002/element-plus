@@ -19,7 +19,7 @@ import java.util.List;
 import static com.moran.conf.bean.ResponseBean.ok;
 
 /**
- * 菜单管理
+ * 系统管理/菜单管理
  */
 @RestController
 @RequestMapping("/system/menu")

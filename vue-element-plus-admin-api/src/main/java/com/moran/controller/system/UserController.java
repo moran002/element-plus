@@ -21,7 +21,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * 用户管理
+ * 系统管理/用户管理
  */
 @RestController
 @RequestMapping("/system/user")
@@ -74,9 +74,9 @@ public class UserController {
     /**
      * 列表
      */
-    @GetMapping("/list")
+    @GetMapping("/page")
     @SaCheckPermission("system:user:query")
-    public PageResponseBean<UserRespVO> list(String account, String nickName, Long roleIds, String mobile) {
+    public PageResponseBean<UserRespVO> page(String account, String nickName, Long roleIds, String mobile) {
         Page<SysUser> page = userService.pageList(account, nickName, roleIds, mobile);
         if (page.getTotal() > 0) {
             List<Long> roleIdList = page.getRecords().stream().map(SysUser::getRoleIds).flatMap(List::stream).toList();

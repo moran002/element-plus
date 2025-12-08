@@ -36,7 +36,6 @@
     </properties>
 
     <dependencies>
-
         <!-- ip -->
         <dependency>
             <groupId>org.lionsoul</groupId>
@@ -49,7 +48,6 @@
             <artifactId>bizlog-sdk</artifactId>
             <version>${log.version}</version>
         </dependency>
-
         <!-- 数据转换 -->
         <dependency>
             <groupId>org.mapstruct</groupId>
@@ -66,12 +64,7 @@
             <artifactId>mapstruct-processor</artifactId>
             <version>${mapstruct.version}</version>
         </dependency>
-        <!-- 工具类 -->
-        <!-- <dependency> -->
-        <!--     <groupId>cn.hutool</groupId> -->
-        <!--     <artifactId>hutool-all</artifactId> -->
-        <!--     <version>${hutool.version}</version> -->
-        <!-- </dependency> -->
+        <!-- hutool jdk7 工具类 -->
         <dependency>
             <groupId>cn.hutool.v7</groupId>
             <artifactId>hutool-all</artifactId>

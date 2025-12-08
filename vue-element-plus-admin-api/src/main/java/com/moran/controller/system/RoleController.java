@@ -22,7 +22,7 @@ import java.util.List;
 import static com.moran.conf.bean.ResponseBean.ok;
 
 /**
- * 角色管理
+ * 系统管理/角色管理
  */
 @RestController
 @RequestMapping("/system/role")
@@ -64,9 +64,9 @@ public class RoleController {
     /**
      * 角色列表
      */
-    @GetMapping("/list")
+    @GetMapping("/page")
     @SaCheckPermission("system:role:query")
-    public PageResponseBean<RoleRespVO> list(String name) {
+    public PageResponseBean<RoleRespVO> page(String name) {
         Page<SysRole> page = roleService.pageList(name);
         List<Long> parentMenuIds = sysMenuService.getParentIsExistChildren();
         return PageResponseBean.ok(page.getTotal(),

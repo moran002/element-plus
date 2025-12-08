@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * 日志管理
+ * 系统管理/日志管理
  */
 @RestController
 @RequestMapping("/system/log")
@@ -25,9 +25,9 @@ public class LogController {
     /**
      * 日志列表
      */
-    @GetMapping("/list")
+    @GetMapping("/page")
     @SaCheckPermission("system:log:query")
-    public PageResponseBean<LogRespVO> list(Integer type, String nickName) {
+    public PageResponseBean<LogRespVO> page(Integer type, String nickName) {
         Page<SysLoginLog> page = sysLoginLogService.page(type, nickName);
         if (page.getTotal() >0) {
             return PageResponseBean.ok(page.getTotal(), page.getRecords().stream()
